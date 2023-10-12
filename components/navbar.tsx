@@ -45,8 +45,11 @@ export const Navbar = () => {
     SetIsOpen((prev) => !prev);
   };
 
+  const docs = pathname === "/suratkeputusan" || pathname === "/pengurus";
   return (
-    <nav className="w-full max-md:h-[60px] bg-slate-200">
+    <nav
+      className={cn("w-full max-md:h-[60px] bg-slate-200", docs && "w-[610px]")}
+    >
       <div className="max-md:px-6 h-full">
         <div className="flex  items-center h-full">
           <h1 className=" space-x-4 uppercase font-bold ">panggarean</h1>
