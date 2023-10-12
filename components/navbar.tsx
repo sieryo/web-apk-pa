@@ -63,7 +63,7 @@ export const Navbar = () => {
     >
       <div className="max-md:px-6 h-full">
         <div className="flex  items-center h-full">
-          <h1 className=" space-x-4 uppercase font-bold ">panggarean</h1>
+          <h1 className=" space-x-4 uppercase font-bold ">panggabean</h1>
           <AlignJustify className="ml-auto" onClick={toggleClick} />
         </div>
       </div>
