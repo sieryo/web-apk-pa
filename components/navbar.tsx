@@ -54,7 +54,9 @@ export const Navbar = () => {
     pathname === "/suratkeputusan" ||
     pathname === "/pengurus" ||
     pathname === "/mantanketua" ||
-    pathname === "/suratketetapan";
+    pathname === "/suratketetapan" ||
+    pathname === "/anggarandasar" ||
+    pathname === "/anggaranrumahtangga";
   return (
     <nav
       className={cn("w-full max-md:h-[60px] bg-slate-200", docs && "w-[610px]")}
@@ -66,7 +68,7 @@ export const Navbar = () => {
         </div>
       </div>
       <Sheet open={isOpen} onOpenChange={toggleClick}>
-        <SheetContent className="w-[280px]">
+        <SheetContent className={cn("w-[280px]", docs && "w-[420px]")}>
           <div className=" pt-20">
             {menus.map((menu) => (
               <div
@@ -84,7 +86,7 @@ export const Navbar = () => {
                     menu.href === pathname && "underline text-black"
                   )}
                   href={menu.href}
-                  target="_parent"
+                  onClick={toggleClick}
                 >
                   {menu.menu}
                 </Link>
