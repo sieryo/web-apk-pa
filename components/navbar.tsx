@@ -73,12 +73,12 @@ export const Navbar = () => {
             {menus.map((menu) => (
               <div
                 key={menu.href}
-                className=" p-2 font-medium text-[12px] items-center flex relative"
+                className=" p-2 font-medium text-[19px] items-center mt-5 flex relative"
               >
                 {menu.href === pathname ? (
-                  <Square className="w-3 h-3 mr-2" />
+                  <Square className="w-5 h-5 mr-2" />
                 ) : (
-                  <Diamond className="w-3 h-3 mr-2" />
+                  <Diamond className="w-5 h-5 mr-2" />
                 )}
                 <Link
                   className={cn(
