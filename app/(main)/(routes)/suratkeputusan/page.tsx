@@ -1,7 +1,9 @@
 const SuratKeputusanPage = () => {
   return (
     <div>
-      <div>Halaman Surat keputusan</div>
+      <div>
+        <iframe src="surat-keputusan.html" width="100%" height="1000"></iframe>
+      </div>
     </div>
   );
 };

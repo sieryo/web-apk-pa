@@ -1,7 +1,7 @@
 const PengurusPage = () => {
   return (
     <div>
-      <div>Halaman pengurus</div>
+      <iframe src="pengurus.html" width="100%" height="1000"></iframe>
     </div>
   );
 };

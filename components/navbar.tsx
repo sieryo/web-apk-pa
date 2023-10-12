@@ -20,10 +20,6 @@ export const Navbar = () => {
 
   const menus = [
     {
-      menu: "Home",
-      href: "/",
-    },
-    {
       menu: "anggaran dasar",
       href: "/anggarandasar",
     },
@@ -50,10 +46,10 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="w-full max-md:h-[60px] bg-slate-300">
+    <nav className="w-full max-md:h-[60px] bg-slate-200">
       <div className="max-md:px-6 h-full">
         <div className="flex  items-center h-full">
-          <h1 className=" space-x-4 uppercase ">panggarean</h1>
+          <h1 className=" space-x-4 uppercase font-bold ">panggarean</h1>
           <AlignJustify className="ml-auto" onClick={toggleClick} />
         </div>
       </div>
