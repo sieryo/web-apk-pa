@@ -35,9 +35,14 @@ export const Navbar = () => {
       menu: "pengurus",
       href: "/pengurus",
     },
+
     {
-      menu: "anggota",
-      href: "/anggota",
+      menu: "surat ketetapan",
+      href: "/suratketetapan",
+    },
+    {
+      menu: "mantan ketua",
+      href: "/mantanketua",
     },
   ];
 
@@ -45,7 +50,11 @@ export const Navbar = () => {
     SetIsOpen((prev) => !prev);
   };
 
-  const docs = pathname === "/suratkeputusan" || pathname === "/pengurus";
+  const docs =
+    pathname === "/suratkeputusan" ||
+    pathname === "/pengurus" ||
+    pathname === "/mantanketua" ||
+    pathname === "/suratketetapan";
   return (
     <nav
       className={cn("w-full max-md:h-[60px] bg-slate-200", docs && "w-[610px]")}
